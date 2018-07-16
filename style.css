@@ -43,6 +43,18 @@ h1 {
     border-top-right-radius: 10px;
 }
 
+@media (max-width: 1000px) {
+    #container {
+        margin: auto 10px !important;
+    }
+    img {
+        width: 70px;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+    }
+}
+
 .home {
     grid-area: home;
     margin-right: 30px;
