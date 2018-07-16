@@ -9,12 +9,22 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1><span id="player1Score">0</span> - <span id="player2Score">0</span></h1>
-        <p>Playing to: <span class="playingToValue">5</span></p>
-        <input type="number" placeholder="Enter Winning score">
-        <button class="playerOneButton">Player 1</button>
-        <button class="playerTwoButton">Player 2</button>
-        <button class="resetButton">Reset</button>        
+        <section id="container">
+            <div class="container">
+                <img src="images/leeuw.png" alt="cheersMate">
+                <p class="game"><span class="home">Home</span> <span class="visitor">Visitor</span></p>
+                <h1><span id="player1Score">0</span> - <span        id="player2Score">0</span></h1>                
+                <p class="playingTo">Playing to: <span class="playingToValue">5</span></p>
+                <input type="number" placeholder="Enter new Winning score:">
+                <div id="buttons">
+                    <button class="playerOneButton">Player 1</button>
+                    <button class="playerTwoButton">Player 2</button>
+                </div>
+                <div class="resetButton">
+                    <button class="resetButton">Reset score</button> 
+                </div>                
+            </div>
+        </section>       
         <script src="script.js" async defer></script>
     </body>
 </html>

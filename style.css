@@ -1,3 +1,130 @@
+body {
+    background-color: black;
+}
+
 .winner {
     color: green;
+}
+
+.winner::after {
+    content: " Winner";
+    font-size: 22px;
+}
+
+img {
+    width: 70px;
+    position: absolute;
+    top: 45px;
+    right: 35.2%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: rgba(61, 55, 55, 0.658);
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+#container {
+    display: grid;
+    background-color: #F60;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 15% 15% 15% 15%;
+    grid-template-areas: 
+        "home column2 visitor"
+        "column1 column2 column3"
+        "column4"
+        "column5"
+        "column6"
+        "column7"; 
+    text-align: center;
+    margin: 40px 35%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.home {
+    grid-area: home;
+    margin-right: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.visitor {
+    grid-area: visitor;
+    margin-left: 40px;
+    color: white;
+    
+}
+
+#player1Score {
+    grid-area: column1;
+    background-color: beige;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+#player2Score {
+    grid-area: column3;
+    background-color: beige;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.playingTo {
+    grid-area: column4;
+    background-color: white;
+    margin: 16px 20%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.game {
+    margin-top: 40px;
+}
+
+input {
+    grid-area: column5;
+    margin: 20px auto;
+    margin-top: 0;
+    padding: 10px;
+}
+
+#buttons {
+    grid-area: column6;
+    margin-bottom: 10px;
+}
+
+.playerOneButton, .playerTwoButton {
+    margin: auto 5px;
+    padding: 8px 15px;
+    
+}
+
+button.playerOneButton, button.playerTwoButton {
+    background-color: #1961d6;
+    margin-top: 15px;
+    
+}
+
+.resetButton {
+    grid-area: column6;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border: #F60;
+    padding: 8px;
+}
+
+
+.column {
+    min-height: 30%;
+    color: #fff;
+    padding: 60px 0;
+    box-sizing: border-box;
 }
